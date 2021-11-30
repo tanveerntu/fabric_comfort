@@ -14,6 +14,17 @@ import pandas as pd
 import numpy as np
 import pickle
 
+# ---- HIDE STREAMLIT STYLE ----
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 # to load the models from the same PC folder where this .py file is saved.
 # It is assumed that the models with .pkl extension are already saved in the same folder
 # the .pkl files comprising the models were created in google colab using pycaret library and then pickled out
