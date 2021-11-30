@@ -34,7 +34,7 @@ loaded_model = pickle.load(open('etr_comfort_model.pkl', 'rb'))
 #etr stands for extra tree regressor
 
 # Creating the Titles and Image
-st.title("Predicting Comfort for Summer Fabrics")
+st.header("Predicting Comfort for Summer Fabrics")
 
 # taking user input
 warp_count = st.slider('Warp Count (Ne)', 30, 170, 60)
